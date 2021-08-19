@@ -2,10 +2,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartWidget from './CartWidget';
 
 
 const NavbarComponent = () => {
     return(
+      <header>
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Navbar.Brand href="#home">E-commerce</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -21,9 +23,12 @@ const NavbarComponent = () => {
       </NavDropdown>
       <Nav.Link href="#pricing">Contacto</Nav.Link>
     </Nav>
-    
+    <CartWidget/>
   </Navbar.Collapse>
 </Navbar>
+
+</header>
+
     )
 }
 
