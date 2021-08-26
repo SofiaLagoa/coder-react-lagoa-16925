@@ -19,3 +19,21 @@
     border: none;
     background-color: thistle;
 }
+
+.lista{
+    list-style:none;
+}
+
+.card-product{
+    border: 2px solid rgb(103, 103, 154);
+    background-color: thistle;
+    margin: 10px;
+}
+
+.button-product{
+    background-color: rgb(103, 103, 154);
+}
+
+.button-product:hover{
+    background-color: rgb(169, 196, 247);
+}
