@@ -1,12 +1,12 @@
 
-import ItemList from "./ItemList";
+import ItemList from "./ItemDetail";
 
 const ItemListContainer = (props) => {
     console.log(props)
     return (  
       <>
-      <ItemList></ItemList>
       <h1>Bienvenido a la tienda {props.tienda}</h1>
+      <ItemList/>     
       </>
     );
 }
