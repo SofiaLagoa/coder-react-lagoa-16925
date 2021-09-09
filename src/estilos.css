@@ -37,3 +37,9 @@
 .button-product:hover{
     background-color: rgb(169, 196, 247);
 }
+
+.div-btn{
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}
