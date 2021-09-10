@@ -1,17 +1,24 @@
 import NavbarComponent from "./Navbar"
-import ItemCount from "./componentes/ItemCount"
 import ItemListContainer from "./componentes/ItemListContainer"
 import ItemDetailContainer from "./componentes/ItemDetailContainer"
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 
 
 const App = ()=>{
-    return (
-    <>
-        <NavbarComponent/>
-        <ItemListContainer tienda="E-commers"/>
-        <ItemDetailContainer/>
-        <ItemCount stock={5} initial={1} onAdd={(cantidad)=>{console.log(cantidad)}} />
-    </>  
+   
+    return ( 
+
+    <BrowserRouter>
+    <NavbarComponent/>
+
+  <Switch>
+    <Route path="/" component={ItemListContainer} exact/>
+    <Route path="/category/:id" component={ItemListContainer} />
+    <Route path="/item/:id" component={ItemDetailContainer} />  
+  </Switch>
+
+    </BrowserRouter>  
+
     )
 }
 

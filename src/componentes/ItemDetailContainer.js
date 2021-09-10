@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import Spinner from 'react-bootstrap/Spinner'
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
 
     const [elemento, setElemento] = useState([]);
     const [isLoaded, setIsLoaded] = useState(false);
+    const {id} = useParams();
     useEffect(() =>{
-      fetch("https://fakestoreapi.com/products?limit=1")
+      fetch("https://fakestoreapi.com/products/"+id)
       .then(res => res.json())
       .then((json) => { 
-              console.log("aca estoy");
-              let producto = json[0]; 
               setIsLoaded(true); 
-              setElemento(producto);
+              setElemento(json);
       })
-       }, [])
+       }, [id])
        if(!isLoaded){
         return (
    <div className="d-flex justify-content-center">
@@ -26,7 +26,7 @@ const ItemDetailContainer = () => {
     }
     else{
       return(
-        <ItemDetail image={elemento.image} title={elemento.title} price={elemento.price}/>
+        <ItemDetail description={elemento.description} category={elemento.category} image={elemento.image} title={elemento.title} price={elemento.price}/>
       )
     } 
    
