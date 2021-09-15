@@ -3,6 +3,7 @@ import ItemDetail from "./ItemDetail";
 import Spinner from 'react-bootstrap/Spinner'
 import { useParams } from "react-router-dom";
 
+
 const ItemDetailContainer = () => {
 
     const [elemento, setElemento] = useState([]);
@@ -26,7 +27,10 @@ const ItemDetailContainer = () => {
     }
     else{
       return(
+        <>
         <ItemDetail description={elemento.description} category={elemento.category} image={elemento.image} title={elemento.title} price={elemento.price}/>
+       
+        </>
       )
     } 
    

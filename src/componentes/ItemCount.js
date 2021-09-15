@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AddToCart from "./AddToCart";
 
 const ItemCount = ({stock, onAdd, initial}) => {
 
@@ -27,13 +28,10 @@ const ItemCount = ({stock, onAdd, initial}) => {
                 <div className="div-button">
                 <button className="btn" onClick={sumar}>+</button>
                 <button className="btn" onClick={restar}>-</button>
-                <button className="btn" disabled={stock>0 ? false:true} onClick={agregar}>Agregar al carrito</button>
+                <AddToCart disabled={stock>0 ? false:true} onClick={agregar}/>
                 </div>
             </div>
       );
     }
-    
-   
 
- 
 export default ItemCount;
