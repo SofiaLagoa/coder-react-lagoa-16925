@@ -13,9 +13,9 @@ const NavbarComponent = () => {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link><Link to="/">Home</Link></Nav.Link>
-      <Nav.Link><Link to="/category/nosotros">Nosotros</Link></Nav.Link>
-      <Nav.Link><Link to="/category/contacto">Contacto</Link></Nav.Link>
+      <Nav.Item className="p-2"><Link to="/">Home</Link></Nav.Item>
+      <Nav.Item className="p-2"><Link to="/category/nosotros">Nosotros</Link></Nav.Item>
+      <Nav.Item className="p-2"><Link to="/category/contacto">Contacto</Link></Nav.Item>
     </Nav>
     <CartWidget/>
   </Navbar.Collapse>

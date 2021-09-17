@@ -27,7 +27,7 @@ const ItemList = () => {
     else{
       return(
           elemento.map((item, index)=>           
-            <Item identificador={item.id} image={item.image} title={item.title} price={item.price}/>
+            <Item identificador={item.id} image={item.image} title={item.title} price={item.price} key={index} />
         
             )
        

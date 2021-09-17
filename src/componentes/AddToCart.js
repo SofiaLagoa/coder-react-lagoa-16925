@@ -3,20 +3,23 @@ import { Link } from "react-router-dom";
 
 
 const InputCount = ()=>{
-    return <Link to="Cart.js"><button  className="btn">Terminar compra</button></Link>
+    return <Link to="/cart"><button  className="btn">Terminar compra</button></Link>
 }
 
-const ButtomCount = ()=>{
-    return <button  className="btn">Agregar al carrito</button>
-} 
 
-const AddToCart = () => {
+
+const AddToCart = (changeButton) => {
+
+    const ButtomCount = ()=>{
+    
+        return <button className="btn" onClick={changeButton.add}>Agregar al carrito</button>
+    } 
 
     const [inputType, setInputType] = useState('buttom');
     const handlerInter = ()=> {
         setInputType('input')
     }
-
+  
      return (
          <div onClick={handlerInter}>
 

@@ -1,10 +1,11 @@
 import Card from 'react-bootstrap/Card'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemCount from './ItemCount';
+import { useContext } from "react"
+import {contexto} from '../componentes/CartContext'
 
 const ItemDetail = (products) => {
-
-
+    const {addItem} = useContext(contexto);
 return ( 
 <>
 <Card className="card-product" style={{ width: '18rem' }}>
@@ -17,7 +18,7 @@ return (
     </Card.Body>
 </Card> 
 
-<ItemCount stock={5} initial={1} onAdd={(cantidad)=>{console.log(cantidad)}}/>
+<ItemCount stock={5} initial={1} onAdd={(cantidad)=>{addItem(cantidad)}}/>
 </>
      );
 }
