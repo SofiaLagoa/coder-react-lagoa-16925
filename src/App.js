@@ -16,7 +16,7 @@ const App = ()=>{
     <Route path="/" component={ItemListContainer} exact/>
     <Route path="/category/:id" component={ItemListContainer} />
     <Route path="/item/:id" component={ItemDetailContainer} />  
-    <Route path="/cart/:id" component={Cart} />  
+    <Route path="/cart" component={Cart} />  
   </Switch>
   </CartContext>
   

@@ -28,8 +28,7 @@ const ItemDetailContainer = () => {
     else{
       return(
         <>
-        <ItemDetail description={elemento.description} category={elemento.category} image={elemento.image} title={elemento.title} price={elemento.price}/>
-       
+        <ItemDetail description={elemento.description} category={elemento.category} image={elemento.image} title={elemento.title} price={elemento.price} id={elemento.id}/>
         </>
       )
     } 
