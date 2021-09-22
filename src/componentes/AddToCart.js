@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const InputCount = ()=>{
-    return <Link to="/cart"><button  className="btn">Terminar compra</button></Link>
+    return <Link to="/cart"><button className="btn">Terminar compra</button></Link>
 }
 
 

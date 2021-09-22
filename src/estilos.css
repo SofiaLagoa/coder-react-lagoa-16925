@@ -18,6 +18,8 @@
     margin: 3px;
     border: none;
     background-color: thistle;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .lista{
@@ -32,6 +34,7 @@
 
 .button-product{
     background-color: rgb(103, 103, 154);
+    color:#fff;
 }
 
 .button-product:hover{
@@ -47,3 +50,13 @@
 .idNone{
     display: none;
 }
+
+.img-product-cart{
+    width:10%
+}
+
+.cartWidgetNone{
+    display: none;
+}
+
+

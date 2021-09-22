@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemCount from './ItemCount';
 import { useContext } from "react"
 import {contexto} from '../componentes/CartContext'
+import { Link } from 'react-router-dom'
 
 const ItemDetail = (products) => {
     const {addCart} = useContext(contexto);
@@ -17,8 +18,8 @@ return (
     <Card.Text>${products.price}</Card.Text>
     </Card.Body>
 </Card> 
-
 <ItemCount stock={5} initial={1} onAdd={(cantidad)=>{addCart(products, cantidad)}}/>
+<button className="btn"><Link to={ '/' }> Volver a home </Link></button>
 </>
      );
 }

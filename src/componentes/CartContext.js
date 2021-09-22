@@ -34,9 +34,17 @@ const {Provider} = contexto
 		const cartFilter = cart.filter(element => element.item.id !== itemId)
 		return setCart(cartFilter)
 	}
+    const emptyCart = () =>{
+        setCart([]);
+    }
+    
+    const elementCart = () => {
+        return cart.reduce((suma, producto) => suma + producto.cantidad, 0)
+    }
+
 
      return(
-         <Provider value={{cart, addCart, removeCart}}>
+         <Provider value={{cart, addCart, removeCart, emptyCart, elementCart}}>
              {children}
          </Provider>
      ) 

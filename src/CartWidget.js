@@ -1,10 +1,23 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+import { useContext } from 'react'
+import { contexto } from "./componentes/CartContext"
+import { FiShoppingCart } from 'react-icons/fi'
 
 
 const CartWidget = () => {
-    return (  
-        <Link to="/cart" className="material-icons">add_shopping_cart</Link>
-    );
+    const {elementCart} = useContext(contexto);
+   return(
+       <>
+    {((elementCart) !== 0)? 
+        <div> 
+          <Link to="/cart"><p><FiShoppingCart/></p><span>{elementCart()}</span></Link>
+        </div>
+        :
+        <Link to="/cart"><FiShoppingCart/></Link>
+    }  
+    </>
+   )
 }
  
 export default CartWidget;
+
