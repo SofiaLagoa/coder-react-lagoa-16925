@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import Spinner from 'react-bootstrap/Spinner'
 import { useParams } from "react-router-dom";
-
+import { firestore } from "./firebase";
 
 const ItemDetailContainer = () => {
 
@@ -10,13 +10,20 @@ const ItemDetailContainer = () => {
     const [isLoaded, setIsLoaded] = useState(false);
     const {id} = useParams();
     useEffect(() =>{
-      fetch("https://fakestoreapi.com/products/"+id)
-      .then(res => res.json())
-      .then((json) => { 
-              setIsLoaded(true); 
-              setElemento(json);
+
+      let idProducto = id;
+
+      const db = firestore
+      let producto = db.collection('productos').doc(idProducto)
+      producto.get().then((respuesta)=>{
+        setElemento(
+          {...respuesta.data(),   
+            id: respuesta.id,          
+         });
+         setIsLoaded(true)
       })
-       }, [id])
+      }, [id])
+
        if(!isLoaded){
         return (
    <div className="d-flex justify-content-center">
