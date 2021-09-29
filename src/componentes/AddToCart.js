@@ -6,8 +6,6 @@ const InputCount = ()=>{
     return <Link to="/cart"><button className="btn">Terminar compra</button></Link>
 }
 
-
-
 const AddToCart = (changeButton) => {
 
     const ButtomCount = ()=>{

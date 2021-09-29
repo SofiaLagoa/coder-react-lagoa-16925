@@ -4,6 +4,7 @@ import ItemDetailContainer from "./componentes/ItemDetailContainer"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import CartContext from "./componentes/CartContext"
 import Cart from "./componentes/Cart"
+import { Checkout } from "./componentes/Checkout"
 
 const App = ()=>{
 
@@ -17,6 +18,7 @@ const App = ()=>{
     <Route path="/category/:id" component={ItemListContainer} />
     <Route path="/item/:id" component={ItemDetailContainer} />  
     <Route path="/cart" component={Cart} />  
+    <Route path="/checkout" component={Checkout} />  
   </Switch>
   </CartContext>
   

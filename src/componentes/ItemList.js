@@ -8,7 +8,7 @@ const ItemList = () => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() =>{
-      const db = firestore
+      //const db = firestore
       const collection = firestore.collection("productos")
       const query = collection.get()
       query

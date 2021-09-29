@@ -23,7 +23,7 @@ return(
          ))}
          <hr/>
          <button className="btn button-product" onClick= {emptyCart}>Eliminar todos los productos del carrito</button>
-         <Link to={ '/' }><button onClick= {emptyCart} className="btn button-product">Finalizar la compra</button></Link>
+         <Link to={ '/checkout' }><button className="btn button-product">Finalizar la compra</button></Link>
     </div>
     
     :<div> <p> No tenes elementos en tu carrito </p><Link to={ '/' }> Volver a home </Link></div>   
