@@ -14,10 +14,10 @@ const NavbarComponent = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto d-flex justify-content-end">
         <Nav.Item><Link className="itemNav p-2" to="/">Home</Link></Nav.Item>
-        <Nav.Item><Link className="itemNav p-2" to="/category/nosotros">Deco</Link></Nav.Item>
-        <Nav.Item><Link className="itemNav p-2" to="/category/nosotros">Lamparas</Link></Nav.Item>
-        <Nav.Item><Link className="itemNav p-2" to="/category/contacto">Sillas</Link></Nav.Item>
-        <Nav.Item><Link className="itemNav p-2" to="/category/contacto">Blanqueria</Link></Nav.Item>
+        <Nav.Item><Link className="itemNav p-2" to="/category/deco">Deco</Link></Nav.Item>
+        <Nav.Item><Link className="itemNav p-2" to="/category/lamparas">Lamparas</Link></Nav.Item>
+        <Nav.Item><Link className="itemNav p-2" to="/category/sillas">Sillas</Link></Nav.Item>
+        <Nav.Item><Link className="itemNav p-2" to="/category/blanqueria">Blanqueria</Link></Nav.Item>
         <Nav.Item><Link className="itemNav p-2" to="/category/contacto">Contacto</Link></Nav.Item>
     </Nav>
     <CartWidget/>
