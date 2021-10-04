@@ -18,7 +18,6 @@ const NavbarComponent = () => {
         <Nav.Item><Link className="itemNav p-2" to="/category/lamparas">Lamparas</Link></Nav.Item>
         <Nav.Item><Link className="itemNav p-2" to="/category/sillas">Sillas</Link></Nav.Item>
         <Nav.Item><Link className="itemNav p-2" to="/category/blanqueria">Blanqueria</Link></Nav.Item>
-        <Nav.Item><Link className="itemNav p-2" to="/category/contacto">Contacto</Link></Nav.Item>
     </Nav>
     <CartWidget/>
   </Navbar.Collapse>
