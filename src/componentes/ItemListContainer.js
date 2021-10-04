@@ -1,9 +1,14 @@
 import ItemList from "./ItemList"
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
+import { useParams } from "react-router";
 
-const ItemListContainer = (props) => {
-   
+const ItemListContainer = () => {
+  
+  //let categories = 'Lampara';
+  const {category} = useParams();
+  const asd = category;
+  
     return (  
     <>
     <div className="banner-principal">
@@ -12,7 +17,7 @@ const ItemListContainer = (props) => {
     
       <Container>
         <Row>
-           <ItemList></ItemList>  
+           <ItemList category={asd} key={0}></ItemList>  
         </Row> 
       </Container>
     </>

@@ -5,15 +5,20 @@ import { firestore } from "./firebase";
 import Col from 'react-bootstrap/Col'
 
 
-const ItemList = () => {
+const ItemList = (productsList) => {
     const [elemento, setElemento] = useState([]);
     const [isLoaded, setIsLoaded] = useState(false);
-
+  
     useEffect(() =>{
-      //const db = firestore
+
       const collection = firestore.collection("productos")
-      const query = collection.get()
-      query
+        let query = ''
+        if(productsList.category === undefined || productsList.category == null || productsList.category === ''){
+            query = collection.get()
+        } else {
+          query = collection.where('category', '==', productsList.category).get()
+        }
+       query
            .then((snapshot)=>{
              const docs = snapshot.docs
              const productos =[]
@@ -29,7 +34,7 @@ const ItemList = () => {
              console.log(error)
            })
 
-       }, [])
+       }, [productsList.category])
 
        if(!isLoaded){
         return (
@@ -40,6 +45,7 @@ const ItemList = () => {
    </div>)
     }
     else{
+     
       return(
           elemento.map((item, index)=> 
       

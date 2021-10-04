@@ -6,11 +6,11 @@ const Footer = () => {
     return ( 
         <>
           <footer className="footer">
-            <div class="iconosRedes">
+            <div className="iconosRedes">
                     <Link className="insta" target="_blank" to="https://www.instagram.com/"><FaInstagram/></Link>
                     <Link className="wsap" target="_blank" to="https://web.whatsapp.com/"><FaWhatsapp/></Link>
             </div>
-            <p class="created">Created by Sofia Lagoa</p>
+            <p className="created">Created by Sofia Lagoa</p>
         </footer>
         </>
      );
