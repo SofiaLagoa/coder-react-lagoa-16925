@@ -9,11 +9,11 @@ const CartWidget = () => {
    return(
        <>
     {((elementCart) !== 0)? 
-        <div> 
-          <Link to="/cart"><p><FiShoppingCart/></p><span>{elementCart()}</span></Link>
+        <div className="icono-carrito"> 
+          <Link className="icono-carrito" to="/cart"><p><FiShoppingCart/></p><span>{elementCart()}</span></Link>
         </div>
         :
-        <Link to="/cart"><FiShoppingCart/></Link>
+        <Link className="itemNav" to="/cart"><FiShoppingCart/></Link>
     }  
     </>
    )

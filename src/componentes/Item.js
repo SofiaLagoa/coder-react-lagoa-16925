@@ -7,12 +7,12 @@ const Item = (products) => {
     return ( 
     <>
 <Card className="card-product" style={{ width: '18rem' }}>
-    <Card.Img variant="top" src={products.image} />
+    <Card.Img variant="top" className="img-size" src={products.image} />
     <Card.Body>
     <Card.Title>{products.title}</Card.Title>
     <Card.Text>${products.price}</Card.Text>
     <Button className="button-product" variant="primary">
-        <Link to={"/item/" + products.identificador}>Ver mas</Link>
+        <Link className="btn-products-hover" to={"/item/" + products.identificador}>Ver más</Link>
         </Button>
     </Card.Body>
 </Card> 

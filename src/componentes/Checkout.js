@@ -37,38 +37,20 @@ export const Checkout = () => {
     return (
         <>
             <div className="container">
-                <h2>Vista del checkout</h2>     
+                <h2>Checkout</h2>     
                 <hr/>
                 {!cart.length
                 ?   <h2>No hay elementos en el carrito para generar la compra</h2>
                 : 
                     <div>
                         <form onSubmit={ enviarSubmit }>
-                        <label>Nombre</label>
-                            <input
-                            type='text'
-                            value={ value.nombre }
-                            onChange= {tomarDatosDelInput}
-                            name='nombre'
-                            required
-                            />
-                            <label>Email</label>
-                            <input
-                            type='email'
-                            value={ value.email }
-                            onChange= {tomarDatosDelInput}
-                            name='email'
-                            required
-                            />
-                            <label>Telefono</label>
-                            <input
-                            type='tel'
-                            value={ value.telefono }
-                            onChange= {tomarDatosDelInput}
-                            name='telefono'
-                            required
-                            />
-                            <button className='btn'>Enviar informacion de contacto</button>
+                            <label className="p-2">Nombre</label>
+                            <input type='text' value={ value.nombre } onChange= {tomarDatosDelInput} name='nombre' required/>
+                            <label className="p-2">Email</label>
+                            <input type='email' value={ value.email } onChange= {tomarDatosDelInput} name='email' required/>
+                            <label className="p-2">Telefono</label>
+                            <input type='tel'value={ value.telefono } onChange= {tomarDatosDelInput} name='telefono' required/>
+                            <button className='m-2 btn button-product'>Enviar informacion de contacto</button>
                         </form>
                     </div>
                 }    

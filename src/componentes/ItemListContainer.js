@@ -1,12 +1,21 @@
 import ItemList from "./ItemList"
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 
 const ItemListContainer = (props) => {
    
     return (  
-      <>
-      <h1>Bienvenido a la tienda {props.tienda}</h1>
-      <ItemList></ItemList>
-      </>
+    <>
+    <div className="banner-principal">
+      <h1 className="h1-index">Convertimos tu casa en tu hogar</h1>
+    </div>
+    
+      <Container>
+        <Row>
+           <ItemList></ItemList>  
+        </Row> 
+      </Container>
+    </>
     );
 }
 

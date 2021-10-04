@@ -2,6 +2,8 @@ import Item from "./Item";
 import { useEffect, useState } from "react"; 
 import Spinner from 'react-bootstrap/Spinner';
 import { firestore } from "./firebase";
+import Col from 'react-bootstrap/Col'
+
 
 const ItemList = () => {
     const [elemento, setElemento] = useState([]);
@@ -39,9 +41,13 @@ const ItemList = () => {
     }
     else{
       return(
-          elemento.map((item, index)=>           
-            <Item identificador={item.id} image={item.image} title={item.title} price={item.price} key={index} />
-            )
+          elemento.map((item, index)=> 
+      
+          <Col lg={3}>
+            <Item identificador={item.id} image={item.image} title={item.title} price={item.price} key={index} />  
+          </Col>
+      
+        )
        
       )
     } 

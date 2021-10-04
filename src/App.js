@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom"
 import CartContext from "./componentes/CartContext"
 import Cart from "./componentes/Cart"
 import { Checkout } from "./componentes/Checkout"
+import Footer from "./Footer"
 
 const App = ()=>{
 
@@ -20,6 +21,7 @@ const App = ()=>{
     <Route path="/cart" component={Cart} />  
     <Route path="/checkout" component={Checkout} />  
   </Switch>
+ <Footer></Footer>
   </CartContext>
   
     </BrowserRouter>  

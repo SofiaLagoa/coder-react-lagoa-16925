@@ -19,7 +19,7 @@ return (
     </Card.Body>
 </Card> 
 <ItemCount stock={5} initial={1} onAdd={(cantidad)=>{addCart(products, cantidad)}}/>
-<button className="btn"><Link to={ '/' }> Volver a home </Link></button>
+<Link className="btn button-product" to={ '/' }> Volver a home </Link>
 </>
      );
 }

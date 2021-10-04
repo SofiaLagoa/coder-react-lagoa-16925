@@ -26,7 +26,10 @@ return(
          <Link to={ '/checkout' }><button className="btn button-product">Finalizar la compra</button></Link>
     </div>
     
-    :<div> <p> No tenes elementos en tu carrito </p><Link to={ '/' }> Volver a home </Link></div>   
+    :<div> 
+        <p> No tenes elementos en tu carrito </p>
+        <Link to={ '/' } class="btn button-product p-2"> Volver a home </Link>
+    </div>   
 }
 </>
 )  

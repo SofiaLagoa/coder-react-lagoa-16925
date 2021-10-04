@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 
 
 const InputCount = ()=>{
-    return <Link to="/cart"><button className="btn">Terminar compra</button></Link>
+    return <Link to="/cart"><button className="btn button-product">Terminar compra</button></Link>
 }
-
+ 
 const AddToCart = (changeButton) => {
 
     const ButtomCount = ()=>{
-    
-        return <button className="btn" onClick={changeButton.add}>Agregar al carrito</button>
+        return <button className="btn button-product" onClick={changeButton.add}>Agregar al carrito</button>
     } 
 
     const [inputType, setInputType] = useState('buttom');

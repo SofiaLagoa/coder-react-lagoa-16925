@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Poiret+One&display=swap');
+
+/* ItemCount */
+.div-accountant{
+    background-color: #a3a3a3;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 20%;
+    height: auto;
+}
+
+.div-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin: 3px;
+    border: none;
+    background-color: thistle;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lista{
+    list-style:none;
+}
+/* CART PRODUCTS */
+.card-product{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#fff;
+    border:none;
+    background-color: #a3a3a3;
+    margin: 10px;
+}
+
+.button-product{
+    background-color: #ae8d75;
+    color:#fff;
+    text-decoration: none;
+    list-style: none; 
+    cursor: pointer;
+}
+
+.button-product:hover{
+    color:#fff;
+}
+
+.button-product:hover{
+    background-color: #b38360;
+}
+
+.btn-products-hover{
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-products-hover:hover{
+    text-decoration: none;
+    list-style: none;  
+    color:#fff;
+    cursor: pointer;
+}
+.img-size{
+    width: 100%;
+    height:400px;
+}
+/* FIN CART PRODUCTS */
+
+.div-btn{
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.idNone{
+    display: none;
+}
+
+.img-product-cart{
+    width:10%
+}
+
+.cartWidgetNone{
+    display: none;
+}
+
+
+/* NAVBAR */
+.navDecHome{
+  background-color: #b5794f;
+  font-family: 'Poppins', sans-serif;
+}
+
+.itemNav{
+    text-decoration: none;
+    list-style: none;  
+    color: white;
+    display: flex;
+    justify-items: end;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.itemNav:hover{
+    text-decoration: line-through;
+    color: #754e32;
+}
+
+.icono-carrito{
+    color: #fff;
+    margin-top: 5px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+@media (max-width:768px){
+    .icono-carrito{
+        margin-left: 5px;;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.icono-carrito:hover{
+    color: #754e32;
+}
+
+.logo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    margin: 10px;
+}
+/* FIN NAVBAR*/
+
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: #b5794f;
+}
+
+.iconosRedes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 25px;
+        margin: 0px;
+        padding: 0px;
+}
+
+.created {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.7em;
+    margin: 0;
+    padding: 0 0 15px 0;
+    color: #fff;
+}
+
+.created:hover{
+    color: #754e32;
+}
+
+.insta, .wsap{
+    color:#fff;
+    padding: 0.3em;
+}
+
+.insta:hover, .wsap:hover{
+    color: #754e32;
+}
+
+/* HOME */
+.banner-principal{
+   background-color: #754e32;
+   color: #fff;
+   width: 100%;
+   height: 150px;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.h1-index{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poiret One', cursive;
+    font-size: 4em;
+}
+/* FIN HOME */
