@@ -1,7 +1,7 @@
 import Item from "./Item";
 import { useEffect, useState } from "react"; 
 import Spinner from 'react-bootstrap/Spinner';
-import { firestore } from "./firebase";
+import { firestore } from "./Firebase";
 import Col from 'react-bootstrap/Col'
 
 
@@ -49,7 +49,7 @@ const ItemList = (productsList) => {
       return(
           elemento.map((item, index)=> 
       
-          <Col lg={3}>
+          <Col lg={3} key={index}>
             <Item identificador={item.id} image={item.image} title={item.title} price={item.price} key={index} />  
           </Col>
       

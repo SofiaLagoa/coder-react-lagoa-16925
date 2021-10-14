@@ -1,4 +1,4 @@
-import { getFirestore } from '../componentes/firebase'
+import { getFirestore } from '../componentes/Firebase'
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 

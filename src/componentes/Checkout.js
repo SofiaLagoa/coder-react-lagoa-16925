@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useContext } from 'react'
 import { contexto } from '../componentes/CartContext'
 import Order from '../componentes/Order'
-
+import { Link } from 'react-router-dom'
 
 export const Checkout = () => {
 
@@ -25,7 +25,6 @@ export const Checkout = () => {
         if (value.nombre.length > 3 && value.email.length > 3 && value.telefono.length >8){
             Order(value, cart, emptyCart)
             .then (res => {
-                alert(res)
                 emptyCart()
             })
             .catch (error => alert(error))
@@ -40,7 +39,7 @@ export const Checkout = () => {
                 <h2>Checkout</h2>     
                 <hr/>
                 {!cart.length
-                ?   <h2>No hay elementos en el carrito para generar la compra</h2>
+                ?   <div class="div-check"><p class="text-check">¡Muchas gracias por elegirnos!</p> <p class="text-check">Recibira un email con los pasos a seguir para finalizar la compra</p></div>
                 : 
                     <div>
                         <form onSubmit={ enviarSubmit }>
@@ -54,7 +53,9 @@ export const Checkout = () => {
                         </form>
                     </div>
                 }    
+                <Link className="btn button-product" to={ '/' }> Volver a home </Link>
             </div>
+            
         </>
     )
 }

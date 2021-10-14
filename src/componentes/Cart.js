@@ -27,8 +27,8 @@ return(
     </div>
     
     :<div> 
-        <p> No tenes elementos en tu carrito </p>
-        <Link to={ '/' } class="btn button-product p-2"> Volver a home </Link>
+        <div className="div-cart"><h2 className="h2-cart"> No tenes elementos en tu carrito </h2></div>
+        <Link to={ '/' } className="btn button-product p-2"> Volver a home </Link>
     </div>   
 }
 </>

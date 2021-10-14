@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import Spinner from 'react-bootstrap/Spinner'
 import { useParams } from "react-router-dom";
-import { firestore } from "./firebase";
+import { firestore } from "./Firebase";
 
 const ItemDetailContainer = () => {
 

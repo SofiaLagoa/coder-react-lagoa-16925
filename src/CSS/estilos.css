@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Poiret+One&display=swap');
 
-/* ItemCount */
 .div-accountant{
     background-color: #a3a3a3;
     color: white;
@@ -31,7 +30,7 @@
 .lista{
     list-style:none;
 }
-/* CART PRODUCTS */
+
 .card-product{
     font-family: 'Roboto Condensed', sans-serif;
     color:#fff;
@@ -73,7 +72,6 @@
     width: 100%;
     height:400px;
 }
-/* FIN CART PRODUCTS */
 
 .div-btn{
   font-size: 13px;
@@ -93,8 +91,6 @@
     display: none;
 }
 
-
-/* NAVBAR */
 .navDecHome{
   background-color: #b5794f;
   font-family: 'Poppins', sans-serif;
@@ -142,9 +138,6 @@
     font-size: 1.5em;
     margin: 10px;
 }
-/* FIN NAVBAR*/
-
-/* FOOTER */
 
 .footer{
     width: 100%;
@@ -185,7 +178,6 @@
     color: #754e32;
 }
 
-/* HOME */
 .banner-principal{
    background-color: #754e32;
    color: #fff;
@@ -201,4 +193,33 @@
     font-family: 'Poiret One', cursive;
     font-size: 4em;
 }
-/* FIN HOME */
+
+.text-check{
+    text-align: center;
+    color:white;
+    font-size: 25px;
+    
+}
+
+.div-check{
+    margin: 30px 5px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #754e32;
+    width: 60%;
+    height: 140px;
+}
+
+.div-cart{
+    margin: 30px 5px;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #754e32;
+    width: 60%;
+    height: 100px;
+}
+.h2-cart{
+    color:white;
+    display: flex;
+    justify-content: center;
+}
